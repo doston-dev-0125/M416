@@ -1,0 +1,121 @@
+<html>
+{% load static %}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="static/js/myScript.js"></script>
+</head>
+
+<body bgcolor="#fff">
+
+    <div class="topnav" id="myTopnav">
+        <a  href="{% url 'home' %}">M416 Cyber</a>
+        <a  class="active" href="{% url 'specifications' %}">Specifications</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+        <a  href="{% url 'order' %}">Order Book</a>
+        <a id="book" href="{% url 'login' %}">Book Now</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="CS">
+        <div class="cs-l">
+            <h1 class="">Digital Storm Pc's</h1>
+            <p>Digital Storm PC yordamida Eerxpience Lightning Fast Speed, Ishingizni soniyalar ichida bajaring. Eng so'nggi yangi o'yinlarni maksimal tafsilotlar va yuqori kadrlar tezligida sinab ko'ring, u butunlay yangi darajadagi internit tezlikni  ta'minlaydi.</p>
+
+        </div>
+        <div class="cs-r">
+            <img class="PC" src="static/fonts/pc.jpg" alt="PC">
+        </div>
+
+    </div>
+    <div class="spec">
+        <div class="s-20">
+            <p>Processor</p>
+            <h1>8-Core</h1>
+            <p>Intel i9 7200U</p>
+        </div>
+        <div class="s-20">
+            <p>RAM</p>
+            <h1>16 GB</h1>
+            <p>HyperX DDR-5</p>
+        </div>
+        <div class="s-20">
+            <p>GPU</p>
+            <h1>2080 Ti</h1>
+            <p>Nvidia GeForce</p>
+        </div>
+        <div class="s-20">
+            <p>Display</p>
+            <h1>244 Hz RR</h1>
+            <p>LG Ultragear-4K</p>
+        </div>
+        <div class="vr">
+            <p>VR Ready</p>
+            <h1>VR Gaming</h1>
+            <p>Oculus Quest VR</p>
+        </div>
+    </div>
+    <div class="" style="  background:#2b2b2b;">
+        <h1 class="con">Consoles Available!</h1>
+    </div>
+
+
+
+    <div class="" style="  width:100%;overflow:hidden;">
+        <div class="div-l50" style="width:50%;float:left;">
+            <img src="static/fonts/ps.png" alt="ps">
+        </div>
+        <div class="div-r50">
+            <h1>Playstation 4 Pro</h1>
+        </div>
+    </div>
+    <div class="" style="  width:100%;overflow:hidden;">
+        <div class="div-l50">
+            <h1>Xbox One X</h1>
+        </div>
+        <div class="div-r50">
+            <img src="static/fonts/xbox.jpg" alt="xbox" style="">
+        </div>
+    </div>
+    <div class="" style="  width:100%;overflow:hidden;">
+        <div class="game">
+            <img id="gamepic" src="static/fonts/games.jpg" alt="games">
+        </div>
+        <div class="gamet">
+            <h1>Game Ready Machines</h1>
+        </div>
+    </div>
+
+
+
+    <section class="featuresw">
+        <div id="container" style="width:100%;border-top:5px solid #74b9ff;background:#2b2b2b;overflow:hidden">
+            <div id="left" class="add" style="float:left; width: 50%;">
+                <h3 style="color:white;">M416 Cyber Cafe</h3>
+                <p style="color:white;">O'zbekiston Sammarqand TATU SF B bino </p>
+
+            </div>
+            <div id="right" class="links" style="float:right; width: 50%;color:white;">
+                <h3 style="color:white;">Useful Links</h3>
+                <ul style="color:white;">
+                    <li style="color:white;"><a style="color:white;" href="{% url 'home' %}">Home</a></li>
+                    <li style="color:white;"><a style="color:white;" href="{% url 'specifications' %}">Features</a></li>
+                    <li style="color:white;"><a style="color:white;" href="{% url 'about' %}">About Us</a></li>
+                    <li style="color:white;"><a style="color:white;" href="{% url 'contact' %}">Contact Us</a></li>
+                    <li style="color:white;"><a style="color:white;" href="{% url 'login' %}">Book Now</a></li>
+            </div>
+        </div>
+    </section>
+    <section class="featuresd">
+        <div style="width:100%; border-top:3px solid #74b9ff;">
+            <p id="copy" align="center">© Copyright<b> M416Cyber</b>. Barcha huquqlar himoyalangan</p>
+    </section>
+</body>
+
+</html>

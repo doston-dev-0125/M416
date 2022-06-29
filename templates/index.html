@@ -1,0 +1,101 @@
+<html>
+{% load static %}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" >
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="static/js/myScript.js"></script>
+
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="{% url 'home' %}">M416 Cyber</a>
+        <a href="{% url 'specifications' %}">Specifications</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+        <a  href="{% url 'order' %}">Order Book</a>
+
+        <a id="book" href="{% url 'login' %}">Book Now</a>
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    </section>
+    <section>
+        <div class="Container" style="overflow:hidden">
+            <img class="img" src="static/fonts/bg.jpg">
+            <div class="centered">
+                <h1 class="mainhead" data-text="Apex Cybre Cafe">M416 Cyber Cafe</h1>
+                <p class="mainhead2">Professionallikdan bahra oling</p>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="featuresd">
+        <div id="container" style="width:100%;">
+            <div class="wid-l75">
+                <h1>Yuqori tezlikdagi Internet </h1>
+                <p>Test Fast<b style="color:#FC6220"><i> 50 Mbps</i></b> Tezlik! Cheksiz imkoniyatlar erkinligidan bahramand bo'ling O'zingizga yoqqan qo'shiqlarni yuklab oling, sevimli o'yinlaringizni o'ynang, katta fayl yoki papkalarni biriktiring, zamonaviy surat va videolaringizni yuklang; uning
+                    oddiy va oson M416 Cyber Cafe. </p>
+            </div>
+            <div class="wid-l25">
+                <img src="static/fonts/speedicon.png" alt="speedicon">
+            </div>
+        </div>
+    </section>
+    <section class="featuresw">
+        <div id="container" style="width:100%">
+            <div class="wid-l25">
+                <img src="static/fonts/pc.png" alt="pc">
+            </div>
+            <div class="wid-l75">
+                <h1>Yuqori unumdor kompyuterlar</h1>
+                <p>Mukofotga sazovor bo'lgan yangi darajadagi unumdorlikni sinab ko'ring<b style="color:#FF7B05">Digital Storm PC</b>. Eng yangi texnologiyalar, eng yuqori sifatli Intel va Nvidia komponentlari bilan yaratilgan. <a href="cs.html" style="text-decoration: none;color:blue;">Learn More</a></p>
+
+            </div>
+        </div>
+    </section>
+    <section class="featuresd">
+        <div id="container" style="width:100%;">
+            <div class="wid-l75">
+                <h1>Chempion kabi o'yina</h1>
+                <p>Bir nechta yaqin do'stlar yoki o'nlab odamlar tarmog'i bilan o'yin o'ynashdan qat'i nazar, bizning mashinalarimiz jamoalarga birlashish va har qanday dushmanni yo'q qilish uchun kerakli ustunlikni beradi. Biz sizga o'xshash eng so'nggi o'yin platformalarini taqdim etamiz <b style="color:#74b9ff"> Windows</b>,<b style="color:#7A6CF7"> Playstation</b>,
+                    <b style="color:#49BC6E">Xbox </b> and<b style="color:#F45735"> Nintendo.</b></p>
+            </div>
+            <div class="wid-l25">
+                <img src="static/fonts/xbox.png" alt="speedicon">
+            </div>
+        </div>
+    </section>
+    <section class="featuresw">
+        <div id="container" style="width:100%;border-top:5px solid #74b9ff">
+            <div id="left" class="add" style="float:left; width: 50%;">
+                <h3>M416 Cyber Cafe</h3>
+                <p>O'zbekiston Sammarqand TATU SF B bino</p>
+            </div>
+            <div id="right" class="links" style="float:right; width: 50%;">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'specifications' %}">Features</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                    <li><a href="{% url 'login' %}">Book Now</a></li>
+        
+            </div>
+        </div>
+    </section>
+    <section class="featuresd">
+        <div style="width:100%;border-top:5px solid #74b9ff">
+            <p id="copy" align="center">© Copyright<b> M416 Cyber</b>. Barcha huquqlar himoyalangan</p>
+    </section>
+
+</body>
+
+</html>

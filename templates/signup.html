@@ -1,0 +1,58 @@
+<html>
+    {% load static %}
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="static/js/myScript.js"></script>
+    <script>
+        // Function to check Whether both passwords
+        // is same or not.
+        function checkPassword(form) {
+            password1 = form.pass.value;
+            password2 = form.pass1.value;
+
+            if (password1 != password2) {
+                alert("\nPassword did not match: Please Enter Same Password In Confirm Password!")
+                return false;
+            }
+
+            // If same return True.
+            else {
+
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body bgcolor="#333">
+
+    <div class="topnav" id="myTopnav">
+        <a href="{% url 'home' %}">M416 Cyber</a>
+        <a href="{% url 'specifications' %}">Specifications</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+        <a  href="{% url 'order' %}">Order Book</a>
+        <a id="book" href="{% url 'login' %}">Book Now</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <form class="box"  onSubmit="return checkPassword(this)" method="post">
+        {% csrf_token %}
+        <h1>Sign Up</h1>
+
+        <input class ='input' type="text" placeholder="Username" name="username" >
+        <input class ='input'  type="email" placeholder="E-Mail" name="email" >
+        <input class ='input'  type="text" placeholder="Phone No." name="phone" >
+        <input  class ='input' type="password" name="password1" placeholder="Password" >
+        <input class ='input'  type="password" name="password2" placeholder="Confirm Password">
+        <input class ='input'  type="submit" name="Register" value="Sign up">
+        <h5>Already have an Account? <a href="{% url 'login' %}">Sign in</a></h5>
+    </form>
+</body>
+
+</html>

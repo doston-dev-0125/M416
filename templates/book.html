@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="static/js/myScript.js"></script>
+</head>
+
+<body bgcolor="#333" onload="load()">
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="{% url 'home' %}">M416 Cyber</a>
+        <a href="{% url 'specifications' %}">Specifications</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+        <a  href="{% url 'order' %}">Order Book</a>
+
+        <a id="book" href="{% url 'login' %}">Book Now</a>
+       
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <form class="box" method="post">
+        {% csrf_token %}
+        <h1>Book a Seat</h1>
+    
+    <select name="game" required>
+        <option style="color:black;" value="pc">Normal PC</option>
+        <option style="color:black;" value="gpc">Gaming PC</option>
+        <option style="color:black;" value="vr">Gaming PC with VR</option>
+        <option style="color:black;" value="xbox">Xbox One X</option>
+        <option style="color:black;" value="ps">Playstation 4 Pro</option>
+    </select>
+    <input type="date" name="date" placeholder="Date" >
+    <input type="time" name="time" placeholder="Time" >
+    <input type="number" name="number" placeholder="Number" >
+    <input type="submit" name="submit" value="Upload">
+    </form>
+
+
+    </div>
+
+</body>
+
+</html>

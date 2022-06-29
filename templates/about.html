@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="static/js/myScript.js"></script>
+    <style>
+        .parallax {
+            background-image: url(" static/fonts/about3.jpeg");
+        }
+    </style>
+
+</head>
+
+<body bgcolor="#fff">
+
+    <div class="topnav" id="myTopnav">
+        <a class="active" href="{% url 'home' %}">M416 Cyber</a>
+        <a href="{% url 'specifications' %}">Specifications</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact Us</a>
+        
+        <a  href="{% url 'order' %}">Order Book</a>
+        
+        <a id="book" href="{% url 'login' %}">Book Now</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="" style="overflow:hidden;">
+        <div class="parallax">
+            <div class="centered" style="top:30%;opacity:0.8;">
+                <h1 class="mainhead" style="margin-top:0px;;">About Us</h1>
+            </div>
+        </div>
+    </div>
+    <div class="about" style="">
+        <p>Salom Xush kelibsiz Siz o'zbekistondagi N1 Cyber Kafega tashrif buyurdingiz bu sayt 2022 yilda tashkil topgan bu sayt orqali siz oldingan turib Kafemizda
+            Kompyuterlarga navbatga yozilishingiz mumkun nafaqat kompyuterlara balki playstation o'yinlariga navbatga yozilishingiz mumkun !!! Vaqtingizni Maroqli o'tkazing !
+            <br>
+            <br> Umid qilamizki, bizning Xizmatimiz sizga taqdim etishdan zavqlanganidek, sizga ham yoqadi. Agar sizda biron bir savol yoki sharhingiz bo'lsa, iltimos, ikkilanmang bizga murojat qiling <a style="text-decoration:none;" href="contact.html">Contact us.</a>
+            <br>
+            <br> Hurmat bilan,<br><br> Cyber Cafe jamosi ,<br>M416Cyber</p>
+
+    </div>
+
+
+
+
+    <section class="featuresw">
+        <div id="container" style="width:100%;border-top:5px solid #74b9ff;background:#2b2b2b;overflow:hidden">
+            <div id="left" class="add" style="float:left; width: 50%;">
+                <h3 style="color:white;">M416 Cyber Cafe</h3>
+                <p style="color:white;">O'zbekiston Sammarqand TATU SF B bino </p>
+
+            </div>
+            <div id="right" class="links" style="float:right; width: 50%;color:white;">
+                <h3 style="color:white;">Useful Links</h3>
+                <ul style="color:white;">
+                    <li style="color:white;"><a style="color:white;" href="{% url 'home' %}">Home</a></li>
+                    <li style="color:white;"><a style="color:white;" href="{% url 'specifications' %}">Features</a></li>
+                    <li style="color:white;"><a style="color:white;" href="{% url 'about' %}">About Us</a></li>
+                    <li style="color:white;"><a style="color:white;" href="{% url 'contact' %}">Contact Us</a></li>
+                    <li style="color:white;"><a style="color:white;" href="{% url 'login' %}">Book Now</a></li>
+            </div>
+        </div>
+    </section>
+    <section class="featuresd">
+        <div style="width:100%; border-top:3px solid #74b9ff;">
+            <p id="copy" align="center">© Copyright<b> M416 Cyber</b>. Barcha huquqlar himoyalangan</p>
+    </section>
+</body>
+
+</html>
